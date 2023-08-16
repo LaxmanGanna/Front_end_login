@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Password Javascript</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <label for="old">Enter Old Password</label>
+        <input type="password" id="old" placeholder="Enter your old password"><br>
+        
+        <label for="password">Enter New Password</label>
+        <input type="password" id="password" placeholder="Enter your new password">
+        <label for="cnfrm-password">Confirm Password</label>
+        <input type="password" id="cnfrm-password" placeholder="Confirm password here">
+        <p id="message"></p>
+        <input type="button" onclick="checkPassword()" value="SUBMIT"/>
+    </form>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
