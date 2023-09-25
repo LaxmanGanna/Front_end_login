@@ -6,7 +6,7 @@
         </Console>
         <JDBC name="dbLogsStore" tableName="springBoot_Logs">
             <ConnectionFactory class="com.ciq.config.ConnectionFactory" method="getDatabaseConnection" />
-            <Column name="ID" pattern="%u" />
+            <Column name="ID"/>
             <Column name="DATE_TIME" isEventTimestamp="true" />
             <Column name="CLASS_INFO" pattern="%logger" />
             <Column name="LEVEL" pattern="%level" />
@@ -15,9 +15,9 @@
         </JDBC>
     </Appenders>
     <Loggers>
-        <Logger name="com.ciq" level="debug">
-            <AppenderRef ref="Console" />
-        </Logger>
+<!--         <Logger name="com.ciq" level="debug"> -->
+<!--             <AppenderRef ref="Console" /> -->
+<!--         </Logger> -->
         <Root level="warn">
             <AppenderRef ref="dbLogsStore" />
         </Root>
